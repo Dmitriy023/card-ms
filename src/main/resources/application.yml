@@ -1,0 +1,43 @@
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: /ufx-info-ms
+
+spring:
+  profiles:
+    active: ${ACTIVE_PROFILE:dev}
+  application:
+    name: iba-admin-panel-merchant-management
+  banner:
+    location: classpath:static/banner.txt
+  cloud:
+    kubernetes:
+      enabled: true
+
+management:
+  server:
+    port: ${MANAGEMENT_SERVER_PORT:8081}
+  endpoints:
+    web:
+      exposure:
+        include: info, health
+    enabled-by-default: false
+  endpoint:
+    health:
+      show-details: always
+      enabled: true
+    metrics:
+      enabled: false
+    info:
+      enabled: true
+
+ribbon:
+  eager-load:
+    enabled: true
+
+endpoints:
+  azericard: ${AZERICARD_ENDPOINT:http://10.254.78.2:34444/way4gateibar/httpadapter}
+
+restTemplate:
+  connectTimeout: 3000 # in milliseconds
+  readTimeout: 3000 # in milliseconds

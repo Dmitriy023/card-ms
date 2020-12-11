@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: local
+
+server:
+  port: 8082
+
+management:
+  server:
+    port: 8083

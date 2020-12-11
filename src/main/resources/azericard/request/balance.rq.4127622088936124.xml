@@ -1,0 +1,44 @@
+<UFXMsg scheme="WAY4Appl" direction="Rq" version="2.0" msg_type="Information">
+    <MsgId>04397eae-4f88-4ce0-9697-644f2e457a1d</MsgId>
+    <Source app="IBAR"/>
+    <MsgData>
+        <Information>
+            <Institution>0010</Institution>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>Balance</ParmCode>
+                    <Value>AVAILABLE;BLOCKED;CR_LIMIT;</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Status</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Client</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Parent</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>OrderingEnabled</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>4127622088936124</ContractNumber>
+                    <RBSNumber/>
+                    <Client/>
+                </ContractIDT>
+            </ObjectFor>
+            <DataRs/>
+            <Status/>
+            <RegNumber>AAA-0002-545514</RegNumber>
+        </Information>
+    </MsgData>
+</UFXMsg>

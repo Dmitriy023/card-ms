@@ -1,0 +1,35 @@
+<UFXMsg msg_type="Information" scheme="WAY4Appl" direction="Rq" version="2.0">
+    <MsgId>AAA-555-333-EEE-2312414123456789</MsgId>
+    <Source app="ZIRAATBANK"/>
+    <MsgData>
+        <Information>
+            <Institution>0160</Institution>
+            <OrderDprt>0160UPL</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>Balance</ParmCode>
+                    <Value>BLOCKED</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Status</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Client</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>OrderingEnabled</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>4444444444444444</ContractNumber>
+                </ContractIDT>
+            </ObjectFor>
+        </Information>
+    </MsgData>
+</UFXMsg>
